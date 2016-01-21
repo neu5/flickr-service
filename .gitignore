@@ -1,0 +1,7 @@
+# directories
+node_modules/
+public/
+build/
+
+# files
+npm-debug.log

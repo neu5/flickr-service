@@ -1,0 +1,15 @@
+.list-images {
+  list-style: none;
+  width: 50%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.list-images li {
+  display: inline-block;
+  margin: 5px;
+}
+
+.selected {
+  border: 2px red dashed;
+}

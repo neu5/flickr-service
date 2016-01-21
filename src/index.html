@@ -1,0 +1,19 @@
+<!doctype html>
+<html ng-app="app" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flickr Service</title>
+  <base href="/">
+</head>
+<body>
+  <div ng-controller="HomeController as home">
+    <ul class="list-images">
+      <li ng-repeat="flickrObj in home.flickrObj track by $index"
+          ng-click="home.toggleSelect(flickrObj)">
+        <img ng-class="{selected: flickrObj.isSelected}"
+             ng-src="{{flickrObj.media.m}}">
+      </li>
+    </ul>
+  </div>
+</body>
+</html>
