@@ -24,3 +24,6 @@ The license of this workflow is MIT.
 ## Browser support
 
 The app was tested and it works on IE9, Chrome 47, Firefox 43.
+
+## Demo
+[http://bedziejutro.pl/app/flickr/](http://bedziejutro.pl/app/flickr/)
