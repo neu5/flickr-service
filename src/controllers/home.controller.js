@@ -8,6 +8,11 @@ export default class HomeController {
 
     if (Object.keys(this.$cookies.getAll()).length > 0) {
       Object.keys(this.$cookies.getAll()).forEach(elem => {
+        if (this.$cookies.get(elem).toString() === 'true') {
+          this.$cookies.remove(elem);
+          return;
+        }
+
         this.flickrObj.push({
           link: elem,
           media: {
